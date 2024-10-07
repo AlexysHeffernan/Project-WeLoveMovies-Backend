@@ -13,10 +13,7 @@ function listIsShowing() {
 }
 
 function read(movie_id) {
-  return knex("movies")
-    .select("*")
-    .where({ movie_id })
-    .first();
+  return knex("movies").select("*").where({ movie_id }).first();
 }
 
 function listTheatersWhereShowing(movie_id) {

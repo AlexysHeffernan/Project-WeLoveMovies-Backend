@@ -40,5 +40,8 @@ module.exports = {
     asyncErrorBoundary(movieExists),
     asyncErrorBoundary(listTheatersWhereShowing),
   ],
-  listReviews: [asyncErrorBoundary(movieExists), asyncErrorBoundary(listReviews)],
+  listReviews: [
+    asyncErrorBoundary(movieExists),
+    asyncErrorBoundary(listReviews),
+  ],
 };

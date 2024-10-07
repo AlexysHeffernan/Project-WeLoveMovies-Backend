@@ -10,10 +10,10 @@ const moviesRouter = require("./movies/movies.router");
 app.use("/movies", moviesRouter);
 
 const theatersRouter = require("./theaters/theaters.router");
-app.use("/theaters", theatersRouter); 
+app.use("/theaters", theatersRouter);
 
 const reviewsRouter = require("./reviews/reviews.router");
-app.use("/reviews", reviewsRouter); 
+app.use("/reviews", reviewsRouter);
 
 app.use((req, res, next) => {
   res.status(404).send({ error: "cannot be found." });
